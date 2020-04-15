@@ -147,8 +147,11 @@ function articleCreator(
   article.appendChild(paraThree);
 
   const spanButton = document.createElement("span");
-  spanButton.textContent = "\u25b2";
   spanButton.classList.add("expandButton");
+  const open = '\u2195';
+  spanButton.textContent = open;
+  article.appendChild(spanButton);
+  
 
   /*
   Step 2: Add an event listener to the expandButton span. This event listener should toggle the class 'article-open' on the 'article' div.
